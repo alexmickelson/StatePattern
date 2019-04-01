@@ -1,6 +1,6 @@
 public class HasQuarterState implements State {
 
-    private GumballMachine gumballMachine;
+    transient GumballMachine gumballMachine;
 
     public HasQuarterState (GumballMachine gumballMachine){
         this.gumballMachine = gumballMachine;

@@ -1,6 +1,6 @@
 public class SoldState implements State{
 
-    private GumballMachine gumballMachine;
+    transient GumballMachine gumballMachine;
 
     public SoldState(GumballMachine gumballMachine){
         this.gumballMachine = gumballMachine;
