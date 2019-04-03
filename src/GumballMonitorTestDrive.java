@@ -1,9 +1,7 @@
 import java.rmi.*;
 public class GumballMonitorTestDrive {
     public static void main(String[] args) {
-        String[] location = {"rmi://santafe.mightygumball.com/gumballmachine",
-                             "rmi://boulder.mightygumball.com/gumballmachine",
-                             "rmi://seattle.mightygumball.com/gumballmachine"};
+        String[] location = {"rmi://localhost/gumballMachine"};
         GumballMachineMonitor[] monitor = new GumballMachineMonitor[location.length];
         for (int i=0;i < location.length; i++) {
             try {
